@@ -1,0 +1,377 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  animation: fadeIn 5s ease-out;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  position: relative;
+  color: white;
+  padding: 100px 0;
+  /* margin-top: 56px; */
+  border-radius: 0 0 20px 20px;
+}
+
+.header-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  border-radius: 0 0 20px 20px;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 20px 20px;
+}
+header h1 {
+  position: relative;
+  z-index: 1;
+}
+.carousel-item img {
+  width: 600px;
+  max-width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.carousel-item img:hover {
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #809d3c;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #a9c46c;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 12%;
+}
+@media (max-width: 768px) {
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 15%;
+  }
+
+  #contact .row {
+    flex-direction: column;
+  }
+
+  #contact iframe {
+    height: 250px;
+  }
+}
+#backToTop,
+.navbar {
+  background-color: #5d8736 !important;
+}
+#backToTop {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+#backToTop:hover {
+  background-color: #809d3c !important;
+}
+.navbar {
+  width: 100%;
+  z-index: 1000;
+}
+.nav-link {
+  color: #f4ffc3 !important;
+}
+.nav-link:hover {
+  color: #a9c46c !important;
+}
+
+#products {
+  background: linear-gradient(to bottom, #f4ffc3, #e0f0a0);
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+#products h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5d8736;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+#products h2::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background: #809d3c;
+  position: absolute;
+  bottom: -5px;
+  left: 25%;
+}
+
+.carousel-item {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.carousel-item-description {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 70%;
+  display: none;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.carousel-item img:hover + .carousel-item-description {
+  display: block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #5d8736;
+  border-radius: 20%;
+}
+
+#contact {
+  background: linear-gradient(to bottom, #e0f0a0, #c8dc80);
+  padding: 60px 20px;
+  border-radius: 10px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5d8736;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+#contact h2::after {
+  content: "";
+  width: 50%;
+  height: 4px;
+  background: #809d3c;
+  position: absolute;
+  bottom: -5px;
+  left: 25%;
+}
+
+#contact p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+#contact ul {
+  list-style: none;
+}
+
+#contact ul li {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+#contact ul li::before {
+  content: "📍";
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+#contact iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pricing-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, #f4ffc3, #e0f0a0);
+}
+.price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #5d8736;
+}
+.btn-primary {
+  background-color: #809d3c;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #a9c46c;
+}
+
+:root {
+  --bg-image: linear-gradient(to bottom, #f4ffc3, #a9c46c);
+  --text-color: #333;
+  --card-bg: linear-gradient(to bottom, #f4ffc3, #a9c46c);
+  --price-color: #5d8736;
+  --btn-bg: #809d3c;
+  --btn-hover: #a9c46c;
+}
+
+[data-bs-theme="dark"] {
+  --bg-image: linear-gradient(to bottom, #2e3b21, #1f2918);
+  --text-color: #f8f9fa;
+  --card-bg: #3b4a2e;
+  --price-color: #a9c46c;
+  --btn-bg: #a9c46c;
+  --btn-hover: #809d3c;
+}
+
+body {
+  background: var(--bg-image);
+  color: var(--text-color);
+}
+
+.pricing-card {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+.price {
+  color: var(--price-color);
+}
+
+.btn-primary {
+  background-color: var(--btn-bg);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-hover);
+}
+
+#products,
+#contact {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
+
+#contact p {
+  color: var(--text-color);
+}
+
+#recommended {
+  background-color: #809d3c;
+}
+
+.parallax-bg {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: -1;
+}
+
+#mainNavbar {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.hide-navbar {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+#backToTop {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  z-index: 999;
+}
+
+#backToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.phone-button {
+  color: #f4ffc3;
+  border-color: #f4ffc3;
+}
+
+.post-title {
+  color: #5d8736;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.post-title:hover {
+  text-decoration: underline;
+}
+
+/* https://colorhunt.co/palette/5d8736809d3ca9c46cf4ffc3 */
+
+.pagination .page-link {
+  color: #5d8736;
+  border-color: #5d8736;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #5d8736;
+  border-color: #5d8736;
+  color: #fff;
+}
