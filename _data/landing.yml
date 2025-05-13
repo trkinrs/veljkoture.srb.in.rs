@@ -1,26 +1,24 @@
+---
 images:
-  - url: "/assets/images/theme/default-apples.webp"
-    alt: "Jabuke"
-  - url: "/assets/images/theme/default-lettuce.webp"
-    alt: "Zelena salata"
-  - url: "/assets/images/theme/default-tomato_juice.webp"
-    alt: "Mleveni paradajz"
-address: Ulica Poljoprivrednika 12, Beograd, Srbija
-phone: +381 64 123 4567
-email: info@poljoprivreda.rs
+- url: assets/images/viber_image_2025-05-13_13-59-26-733.jpg
+  alt: Tresnja
+- url: assets/images/viber_image_2025-05-13_13-59-26-899.jpg
+  alt: Tresnje
+- url: assets/images/viber_image_2025-05-13_13-59-26-967.jpg
+  alt: Gajbe tresnje
+address: ''
+phone: "+381 64 123 4567"
+email: ''
 working_hours:
-  - "Ponedeljak - Petak: 08:00 - 18:00"
-  - "Subota: 08:00 - 14:00"
-  - "Nedelja: Zatvoreno"
-
+- Ponedeljak - Petak
 _schema:
   images:
-    - url:
-        type: image_field
-        label: Slika u slajderu
-      alt:
-        type: text_field
-        label: Alt za SEO
+  - url:
+      type: image_field
+      label: Slika u slajderu
+    alt:
+      type: text_field
+      label: Alt za SEO
   address:
     type: text_field
     label: Adresa
@@ -34,5 +32,5 @@ _schema:
     type: text_field
     label: Imejl
   working_hours:
-    - type: text_field
-      label: Radno vreme
+  - type: text_field
+    label: Radno vreme
